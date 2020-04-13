@@ -1,0 +1,187 @@
+html, body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+.overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0;
+    z-index: 99;
+    background-color: #000;
+    transform: scale(0.5);
+    opacity: 0;
+    pointer-events: none;
+}
+
+input[type="checkbox"]:checked ~ .overlay{
+    pointer-events: auto;
+    opacity: 0.8;
+    transform: scale(1);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    z-index: 100;
+    transform: translate(-50%, -50%) scale(.5);
+    width: 100%;
+    height: 220px;
+    max-width: 300px;
+    pointer-events: none;
+    opacity: 0;
+    border-radius: 5px;
+}
+
+input[type="checkbox"]:checked ~ .modal{
+    pointer-events: auto;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition-delay: 0.1s;
+}
+
+.city-input{
+    width: 100%;
+    border: 1px rgb(211, 210, 210) solid;
+    border-radius: 3px;
+    outline: none;
+    padding: 5px;
+}
+
+.city-input:focus{
+    border: 1px  rgb(49, 144, 207) solid;
+    transition: border .5s ease;
+
+}
+
+.modal-content{
+    padding: 0 30px;
+    display: block;
+}
+
+.modal-content h1{
+    color: rgb(49, 144, 207);
+    font-size: 18px;
+}
+
+.modal-content label{
+    display: block;
+    margin: 20px 0 3px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+img{
+    display: block;
+    margin: 0 auto 10px;
+    transform: scale(0.8);
+}
+
+.container{
+    background-color: rgb(137, 186, 219);
+    width: 360px;
+    height: 410px;
+    margin: 50px auto;
+    background-image: linear-gradient(to top, rgb(68, 180, 224), transparent);
+}
+
+.city{
+    font-size: 27px;
+    text-align: center;
+    display: inline-block;
+    margin: 50px 0 0px;
+    width: 100%;
+    color: white;
+}
+
+ .description{
+    font-size: 17px;
+    text-align: center;
+    display: block;
+    margin: 5px auto 0px;
+    width: 100%;
+    color: black;
+    font-weight: 300;
+} 
+
+.temperature{
+    font-size: 17px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px 100px;
+    width: 160px;
+    color: white;
+}
+
+.table{
+    width: 80%;
+    margin: 0 10% 20px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgb(105, 105, 105);
+}
+.table tbody tr{
+    border-bottom: rgb(151, 151, 151) 1px solid;
+}
+
+.table tbody tr td{
+    padding: 8px;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.btn{
+    display: inline-block;
+    width: 100%;
+    padding: 7px;
+    background-image: linear-gradient(to top, rgb(49, 144, 207), rgb(106, 169, 211));
+    color: white;
+    border: none;
+    border-radius: 5px;
+    max-width: 90px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn a{
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 100;
+    width: 90px ;
+}
+
+.btn-open{
+    margin: 0 123px;
+}
+
+.btn-set{
+    margin-right: 10px;
+    margin-top: 40px;
+    margin-left: 41px;
+}
+
+.btn-exit{
+    margin-top: 40px;
+    margin-left: 0;
+}
+
+.verified{
+    border-color: green;
+}
+
+.denied{
+    border-color: red;
+}

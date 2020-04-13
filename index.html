@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Romário Da Silva">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="city"></div>
+        <div class="description"></div>
+        <div class="temperature"></div>
+
+        <div><img class="icon"></div>
+
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td class="feels-like"></td>
+                </tr>
+                <tr>
+                    <td class="humidity"></td>
+                </tr>
+                <tr>
+                    <td class="max"></td>
+                </tr>
+                <tr>
+                    <td class="speed"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <input type="checkbox" id="click" style="display: none;">
+
+        <label class="btn btn-open" for="click">
+            <a>Change Location</a>
+        </label>
+
+        <div class="modal">
+            <div class="modal-content">
+                <h1>Location</h1>
+                <form>
+                    <label for="city">City</label>
+                    <input id="city" class="city-input" type="text">
+                </form>
+            </div>
+
+            <label class="btn btn-close btn-set" for="">
+                <a>Set Location</a>
+            </label>
+
+            
+            <label class="btn btn-close btn-exit" for="click">
+                <a>Exit</a>
+            </label>
+
+
+        </div>
+        
+        <div class="overlay">
+ 
+        </div>
+
+    </div>
+    
+    <script src="weatherUI.js"></script>
+    <script src="weatherAPI.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

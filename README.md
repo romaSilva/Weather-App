@@ -1,2 +1,2 @@
-#WeatherApp
+# WeatherApp
 Simple practice project.

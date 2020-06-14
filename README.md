@@ -1,2 +1,1 @@
-# WeatherApp
-Simple practice project.
+

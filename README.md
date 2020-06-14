@@ -5,6 +5,7 @@
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-usar">Como Usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-contribuir">Como contribuir</a>
 </p>
 
@@ -28,6 +29,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Simples aplicação para verificação do clima em diferentes cidades do mundo. 
 O principal intuito deste projeto era me familializar com a linguagem JavaScript. 
 É feita a interação com uma [API externa](https://openweathermap.org/api) e validação da pesquisa.
+
+## 🔥 Como usar
+- Clone esse repositório: `git clone https://github.com/romaSilva/Weather-App.git`
+- Abra o arquivo `index.html` no seu navegador
+​
 
 ## 🤔 Como contribuir
 
